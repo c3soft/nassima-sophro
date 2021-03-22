@@ -1,0 +1,131 @@
+*,::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: #222a35; */
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    color: #f37712;
+    /* background-image: url('../../public/images/bg_contact.jpg'); */
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .title{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 70px;
+    right: 10px;
+    width: 100%;
+    padding-left: 120px;
+    color: #EF9E9C;
+}
+
+  h2{
+    /* font-family: 'Nothing You Could Do', cursive; */
+    font-family: 'Tangerine', cursive;
+    /* color: #5FEDB6;
+    color: #BA386E;
+    color: #EF9E9C; */
+  
+      color: #6C8387;
+      font-weight: 100;
+      font-size: 5rem;
+  } 
+/* ///////////////////////////// NAVBAR ///////////////////////////////// */
+
+.js-collapseNavbar{
+    background-color: #2e4058 !important;
+    border-radius: 0 0 400px 0;
+}
+.js-mainNavbar{
+    background-color: #2e4058  !important;
+    border-radius: 0 0 400px 0;
+}
+
+.navbar-brand{
+    color: #ba386e  !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    margin-left: 5px;
+}
+
+.navbar-brand span{
+    font-size: 1.1rem;
+}
+
+.nav-link{
+    font-family: 'Roboto', sans-serif;
+    color: #ba386e !important;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    padding-bottom: 0.3rem;
+}
+
+.activ{
+    color: #7EC65E !important;
+    font-weight: bolder;
+    border-bottom: 1px solid #ba386e ;
+}
+
+.nav-services:after{
+    display: block;
+    content: '';
+    border-bottom: 1px solid #ba386e;
+    transform: scale(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.nav-services:hover:after{
+    transform: scale(1);
+}
+
+.nav-item:after{
+    display: block;
+    content: '';
+    border-bottom: 1px solid #ba386e;
+    transform: scale(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.nav-item:hover:after{
+    transform: scale(1);
+}
+
+/* hamburger */
+.toggler-icon{
+    width: 30px;
+    height: 3px;
+    background: #ba386e;
+    margin: 5px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active{
+    box-shadow: none;
+    outline: none;
+}
+
+.navbar-toggler.active .toggler-icon:nth-child(2){
+    opacity: 0;
+}
+
+.navbar-toggler.active .toggler-icon:nth-child(1){
+    transform: translateY(5px) rotate(45deg);
+}
+
+.navbar-toggler.active .toggler-icon:nth-child(3){
+    transform: translateY(-5px) rotate(-45deg);
+}

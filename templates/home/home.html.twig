@@ -1,11 +1,23 @@
 {% extends 'layouts/base.html.twig' %}
 
-{% block title %}Nassima-Sophro{% endblock %}
+{% block title %}Nassima-Sophro
+{% endblock %}
 
 {% block body %}
+	<!-- The video -->
+	<video autoplay muted loop id="myVideo">
+		<source src="{{ asset('img/home.mp4') }}" type="video/mp4">
+	</video>
 
-{% include "layouts/partials/_navbar.html.twig" %}
+	{% include "layouts/partials/_navbar.html.twig" %}
 
-<h1>Welcome</h1>
 
+
+	<div class="title">
+		{# <h1>Sophro</h1> #}
+		<h2>Prends le temps d'évoluer ...</h2>
+	</div>
+
+
+	{# <img src="{{ asset('img/logo.png') }}" alt=""> #}
 {% endblock %}
