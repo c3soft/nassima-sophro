@@ -14,24 +14,46 @@ body{
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
     position: fixed;
+    background-color: rgba(72, 116, 117, 0.431);
     right: 0;
     top: 0;
     min-width: 100%;
     min-height: 100%;
 }
 
-.title{
+.home-container{
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 170px;
+    right: 10px;
+    width: 100%;
+}
+
+.title{
+    /* position: fixed;
     display: flex;
     justify-content: center;
     top: 170px;
     right: 10px;
-    width: 100%;
+    width: 100%; */
     color: #EF9E9C;
+    margin-bottom: 20rem;
 }
 
-
-
+.title h2{
+    /* font-family: 'Nothing You Could Do', cursive; */
+    font-family: 'Tangerine', cursive;
+    /* color: #5FEDB6;
+    color: #BA386E;
+    color: #EF9E9C; */
+    color: #6C8387;
+    font-weight: 100;
+    font-size: 6rem;
+    } 
+    
 /* icon media */
 .medias{
     position: absolute;
@@ -45,7 +67,7 @@ body{
 
 .media{
     position: relative;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,6 +85,28 @@ body{
     transform: scale(1.3);
 }
 
+.container-btn{
+    display: flex;
+
+}
+
+.btn-appel-action{
+    width: 21rem;
+    margin: 0 20px 0 20px;
+    text-align: center;
+    border: 1px solid #f0f0f0;
+    color: #f0f0f0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 2rem;
+   padding: 5px 20px 5px 20px;
+   transition: .7s ease-in-out;
+}
+
+.btn-appel-action:hover{
+    color: #ba386e;
+    background-color: #f0f0f0;
+}
 
 
 
@@ -75,19 +119,6 @@ body{
 
 
 
-
-
-
-h2{
-/* font-family: 'Nothing You Could Do', cursive; */
-font-family: 'Tangerine', cursive;
-/* color: #5FEDB6;
-color: #BA386E;
-color: #EF9E9C; */
-color: #6C8387;
-font-weight: 100;
-font-size: 5rem;
-} 
 
 /* ///////////////////////////// NAVBAR ///////////////////////////////// */
 
