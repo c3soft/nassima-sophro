@@ -26,10 +26,9 @@ body{
     position: fixed;
     display: flex;
     justify-content: center;
-    top: 70px;
+    top: 170px;
     right: 10px;
     width: 100%;
-    padding-left: 120px;
     color: #EF9E9C;
 }
 
