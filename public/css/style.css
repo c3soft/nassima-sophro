@@ -33,12 +33,6 @@ body{
 }
 
 .title{
-    /* position: fixed;
-    display: flex;
-    justify-content: center;
-    top: 170px;
-    right: 10px;
-    width: 100%; */
     color: #EF9E9C;
     margin-bottom: 20rem;
 }
@@ -204,4 +198,74 @@ body{
 
 .navbar-toggler.active .toggler-icon:nth-child(3){
     transform: translateY(-5px) rotate(-45deg);
+}
+
+/* ///////////////// SPRITE ////////////////////// */
+.hi {
+    width: 160px;
+    height: 150px;
+    position: absolute;
+  top: 22px;
+  left: 2140px;
+    background-image: url("../img/bf.png");
+    /* transform: translate3D(200px, 50px, 0); */
+    animation: walk 0.48s steps(10) infinite , moveDog 4.7s linear 1;
+    /* backface-visibility: hidden; */
+    /* perspective: 1000; */
+           
+}
+
+
+
+@keyframes walk {
+    100% { background-position: -1657px; }
+  }
+
+ @keyframes moveDog {
+  100% {
+    transform: translateX(-2657px);
+  } 
+
+}
+
+/* .dog {
+  width: 145px;
+  height: 100px;
+  position: absolute;
+  top: 22px;
+  left: -140px;
+  background-image: url("../img/sprite/dogSprite.png");
+  animation: walkDog .6s steps(6) 4
+    , moveDog 2.7s linear 1;
+}
+
+@keyframes walkDog {
+  100% {
+    background-position: -960px;
+  }
+}
+*/
+
+/* .logo-heart{
+    height: 50%;
+} */
+.btn-rdv{
+width: 21rem;
+margin: 0 20px 0 20px;
+text-align: center;
+border: 1px solid #6C8387;
+color: #6C8387;
+border-radius: 5px;
+text-decoration: none;
+font-size: 2rem;
+padding: 5px 20px 5px 20px;
+transition: .7s ease-in-out;
+}
+
+
+
+
+.btn-rdv:hover{
+color: #ba386e;
+background-color: #f0f0f0;
 }

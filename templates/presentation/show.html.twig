@@ -1,0 +1,33 @@
+{% extends 'layouts/base.html.twig' %}
+
+{% block title %}Présentation
+{% endblock %}
+
+{% block body %}
+	{% include "layouts/partials/_navbar.html.twig" %}
+	<div class="hi"></div>
+	<div class="container mt-5">
+
+		<div class="row mt-5">
+			<div class="col">
+				<img class="logo-heart" src="{{ asset('img/logo.png') }}" alt="">
+			</div>
+			<div class="col mt-5">
+				<div class="mt-5 ">
+					<h2>La Sophrologie</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nobis vero rem odio. Mollitia soluta modi ullam ex, quam expedita totam earum ducimus aliquid magni illum saepe laborum error porro. Molestiae odit explicabo, asperiores aperiam cumque illo perspiciatis aspernatur. Commodi earum tempora aut qui sed pariatur, beatae magni suscipit eveniet.</p>
+				</div>
+				<div class="mt-5 ">
+					<h2>Qui est concèrné...</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nobis vero rem odio. Mollitia soluta modi ullam ex, quam expedita totam earum ducimus aliquid magni illum saepe laborum error porro. Molestiae odit explicabo, asperiores aperiam cumque illo perspiciatis aspernatur. Commodi earum tempora aut qui sed pariatur, beatae magni suscipit eveniet.</p>
+				</div>
+				<div class="mt-5 ">
+					<a class="btn-rdv" href="{{ path('app_presentation') }}">Je prends rendez-vous</a>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+{% endblock %}
