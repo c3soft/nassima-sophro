@@ -5,12 +5,10 @@
 }
 
 body{
-    /* background-color: #222a35; */
     height: 100vh;
     width: 100%;
     overflow: hidden;
     color: #f37712;
-    /* background-image: url('../../public/images/bg_contact.jpg'); */
 }
 
 /* Style the video: 100% width and height to cover the entire window */
@@ -20,9 +18,9 @@ body{
     top: 0;
     min-width: 100%;
     min-height: 100%;
-  }
+}
 
-  .title{
+.title{
     position: fixed;
     display: flex;
     justify-content: center;
@@ -32,17 +30,65 @@ body{
     color: #EF9E9C;
 }
 
-  h2{
-    /* font-family: 'Nothing You Could Do', cursive; */
-    font-family: 'Tangerine', cursive;
-    /* color: #5FEDB6;
-    color: #BA386E;
-    color: #EF9E9C; */
-  
-      color: #6C8387;
-      font-weight: 100;
-      font-size: 5rem;
-  } 
+
+
+/* icon media */
+.medias{
+    position: absolute;
+    list-style: none;
+    right: 2%;
+    top: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media{
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+}
+
+.logo-media{
+    width: 2rem !important;
+    /* height: 1rem !important; */
+    transition: all .3s ease;
+}
+
+.logo-media:hover{
+    transform: scale(1.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h2{
+/* font-family: 'Nothing You Could Do', cursive; */
+font-family: 'Tangerine', cursive;
+/* color: #5FEDB6;
+color: #BA386E;
+color: #EF9E9C; */
+color: #6C8387;
+font-weight: 100;
+font-size: 5rem;
+} 
+
 /* ///////////////////////////// NAVBAR ///////////////////////////////// */
 
 .js-collapseNavbar{
