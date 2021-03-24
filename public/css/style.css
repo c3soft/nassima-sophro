@@ -5,9 +5,10 @@
 }
 
 body{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     overflow: hidden;
+    background-color: rgb(67, 187, 177);
     /* color: #f37712; */
 }
 
@@ -119,6 +120,7 @@ body{
 .js-collapseNavbar{
     background-color: #2e4058 !important;
     border-radius: 0 0 400px 0;
+    z-index: 1000;
 }
 .js-mainNavbar{
     background-color: #2e4058  !important;
@@ -188,7 +190,7 @@ body{
     outline: none;
 }
 
-.navbar-toggler.active .toggler-icon:nth-child(2){
+/* .navbar-toggler.active .toggler-icon:nth-child(2){
     opacity: 0;
 }
 
@@ -198,6 +200,10 @@ body{
 
 .navbar-toggler.active .toggler-icon:nth-child(3){
     transform: translateY(-5px) rotate(-45deg);
+} */
+
+.icon-menu{
+    height: 1.5rem;
 }
 
 /* ///////////////// SPRITE ////////////////////// */
@@ -269,4 +275,45 @@ transition: .7s ease-in-out;
 .btn-rdv:hover{
 color: #ba386e;
 background-color: #f0f0f0;
+}
+
+
+
+/* @media screen and (max-width:768px){
+    .container-title h1{
+        font-size: 3.6rem i !important;
+    }
+} */
+
+@media screen and (max-width:576px){
+    .title h2{
+
+        font-size: 3rem;
+        } 
+
+        .container-btn{
+           flex-direction: column;
+        
+        }
+        
+        .btn-appel-action{
+            width: 16rem;
+            margin: 10px 20px 10px 20px;
+            text-align: center;
+            border: 1px solid #f0f0f0;
+            font-size: 1.5rem;
+            padding: 5px 10px 5px 10px;
+            transition: .7s ease-in-out;
+        }
+
+        .nav-link{
+            font-family: 'Roboto', sans-serif;
+            color: #2b83f6 !important;
+            font-size: 1.2rem;
+            letter-spacing: 3px;
+            padding-bottom: 0.3rem;
+
+            margin: 20px 0 20px 0;
+        }
+        
 }

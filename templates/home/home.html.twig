@@ -5,25 +5,25 @@
 
 {% block body %}
 	<!-- The video -->
-	<video autoplay muted loop id="myVideo">
-		<source src="{{ asset('img/foret.mov') }}" type="video/mp4">
-	</video>
+	{# <video autoplay muted loop id="myVideo">
+				<source src="{{ asset('img/foret.mov') }}" type="video/mp4">
+			</video> #}
 
 	{% include "layouts/partials/_navbar.html.twig" %}
 
 
-<section class="home-container">
-	<div class="title">
-		<h2>Prends le temps d'évoluer ...</h2>
-	</div>
-	<div class="container-btn">
-		<a class="btn-appel-action" href="{{ path('app_presentation') }}">La sophrologie</a>
-		<a class="btn-appel-action" href="{{ path('app_presentation') }}">L'hypnose</a>
-	</div>
-</section>
+		<section class="home-container">
+		 <div class="title">
+			<h2>Prends le temps d'évoluer ...</h2>
+		</div>
+		<div class="container-btn">
+			<a class="btn-appel-action" href="{{ path('app_presentation') }}">La sophrologie</a>
+			<a class="btn-appel-action" href="{{ path('app_presentation') }}">L'hypnose</a>
+		</div>
+	</section>
 
 
-<ul class="medias">
+	<ul class="medias">
 		<li class="media">
 			<a href="#" target="_blank" rel="noopener"><img src="{{ asset('img/medias/facebook.svg') }}" alt="lien vers facebook" class="logo-media" title="Facebook"></a>
 		</li>
@@ -38,7 +38,4 @@
 		</li>
 	</ul>
 
-	{# <a class="btn-appel-action" href="">Je prends rendez-vous</a> #}
-
-	{# <img src="{{ asset('img/logo.png') }}" alt=""> #}
 {% endblock %}
