@@ -123,6 +123,10 @@ body{
 
 /* ///////////////////////////// NAVBAR ///////////////////////////////// */
 
+.navbar{
+    background-color: rgba(255, 255, 255, 0.219);
+}
+
 .js-collapseNavbar{
     background-color: #2e4058 !important;
     border-radius: 0 0 400px 0;
@@ -134,7 +138,7 @@ body{
 }
 
 .navbar-brand{
-    color: #ba386e  !important;
+    color: #fefefe  !important;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.8rem;
     margin-left: 5px;
@@ -146,7 +150,7 @@ body{
 
 .nav-link{
     font-family: 'Roboto', sans-serif;
-    color: #2b83f6 !important;
+    color: #f1f1f1 !important;
     font-size: 1.2rem;
     letter-spacing: 3px;
     padding-bottom: 0.3rem;
@@ -161,7 +165,7 @@ body{
 .nav-services:after{
     display: block;
     content: '';
-    border-bottom: 1px solid #ba386e;
+    border-bottom: 1px solid #fefefe;
     transform: scale(0);
     transition: transform 250ms ease-in-out;
 }
@@ -173,7 +177,7 @@ body{
 .nav-item:after{
     display: block;
     content: '';
-    border-bottom: 1px solid #ba386e;
+    border-bottom: 1px solid #fefefe;
     transform: scale(0);
     transition: transform 250ms ease-in-out;
 }
