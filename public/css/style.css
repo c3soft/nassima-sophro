@@ -163,6 +163,10 @@ body{
 
 /* ///////////////////////////// NAVBAR ///////////////////////////////// */
 
+.nav-home{
+    display: flex;
+    justify-content: flex-end !important;
+}
 .navbar{
     /* background-color: rgba(69, 135, 241, 0.219); */
     /* background-color: rgba(255, 255, 255, 0.219); */
@@ -230,7 +234,13 @@ body{
 }
 
 /* hamburger */
+
+.btn-hamburger{
+    float: right;
+}
+
 .toggler-icon{
+
     width: 30px;
     height: 3px;
     background: #ba386e;
