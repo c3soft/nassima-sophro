@@ -54,6 +54,41 @@ body{
     font-weight: 100;
     font-size: 6.5rem;
     } 
+
+    .main-title{
+      width: 100%;
+          /* text-align:right; */
+    /* font-family: 'Nothing You Could Do', cursive; */
+    font-family: 'Tangerine', cursive;
+    font-family: 'Rochester', cursive;
+
+    color: #e9e9e9;
+    font-weight: 100;
+    font-size: 6.5rem; 
+    }
+
+    .main-title2{
+        width: 100%;
+            /* text-align:right; */
+      /* font-family: 'Nothing You Could Do', cursive; */
+      font-family: 'Tangerine', cursive;
+
+  
+      color: #e9e9e9;
+      font-weight: 100;
+      font-size: 9.5rem; 
+      }
+
+.title2 h3{
+    /* font-family: 'Nothing You Could Do', cursive; */
+    font-family: 'Rochester', cursive;
+    /* color: #5FEDB6;
+    color: #BA386E;
+    color: #EF9E9C; */
+    color: #e9e9e9;
+    font-weight: 100;
+    font-size: 6.5rem;
+    } 
     
 /* icon media */
 .medias{
@@ -124,7 +159,8 @@ body{
 /* ///////////////////////////// NAVBAR ///////////////////////////////// */
 
 .navbar{
-    background-color: rgba(255, 255, 255, 0.219);
+    background-color: rgba(69, 135, 241, 0.219);
+    /* background-color: rgba(255, 255, 255, 0.219); */
 }
 
 .js-collapseNavbar{
