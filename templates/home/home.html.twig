@@ -6,23 +6,23 @@
 {% block body %}
 	<!-- The video -->
 	<video autoplay muted loop id="myVideo">
-				<source src="{{ asset('img/home.mp4') }}" type="video/mp4">
-			</video>
+		<source src="{{ asset('img/home.mp4') }}" type="video/mp4">
+	</video>
 
 	{% include "layouts/partials/_navbar.html.twig" %}
 
-		{# <img src="{{ asset('img/logo.png') }}" alt="" width="229" height="220"> #}
+	{# <img src="{{ asset('img/logo.png') }}" alt="" width="229" height="220"> #}
 
-<img class="logo-heart" src="{{ asset('img/logo.png') }}" alt="">
-		<section class="home-container">
-		 <div class="title">
-			<h2>Prends le temps d'évoluer ...</h2>
-
+	<img class="logo-heart" src="{{ asset('img/logo.png') }}" alt="">
+	
+	<section class="home-container">
+		<div class="title">
+			<h1 class="title-home">Prends le temps d'évoluer ...</h1>
 		</div>
 		{# <div class="title2">
-			<h2>Prends le temps d'évoluerrrrrrrrrrrrr ...</h2>
-		</div> #}
-					{# <h1 class="main-title2">Prends le temps d'évoluer ...</h1> #}
+					<h2>Prends le temps d'évoluerrrrrrrrrrrrr ...</h2>
+				</div> #}
+		{# <h1 class="main-title2">Prends le temps d'évoluer ...</h1> #}
 		<div class="container-btn">
 			<a class="btn-appel-action" href="{{ path('app_presentation') }}">La sophrologie</a>
 			<a class="btn-appel-action" href="{{ path('app_presentation') }}">L'hypnose</a>

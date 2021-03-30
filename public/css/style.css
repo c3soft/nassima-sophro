@@ -41,57 +41,59 @@ body{
 
 .title{
     /* color: #EF9E9C; */
-    margin-bottom: 20rem;
+    margin-bottom: 10rem;
 }
 
-.title h2{
-    /* font-family: 'Nothing You Could Do', cursive; */
+/* .title h1{
     font-family: 'Tangerine', cursive;
-    /* color: #5FEDB6;
-    color: #BA386E;
-    color: #EF9E9C;
-    color: #e9e9e9; */
-    color: lightslategray;
+    color: #42766C;
     font-weight: 100;
     font-size: 9.5rem;
-    padding-left: 70rem;
+    padding-left: 50rem;
 
-    } 
+}  */
 
-    .main-title{
-      width: 100%;
-          /* text-align:right; */
+.title-home{
     /* font-family: 'Nothing You Could Do', cursive; */
     font-family: 'Tangerine', cursive;
-    font-family: 'Rochester', cursive;
 
+    color: #5FEDB6;
+    color: #BA386E;
+    color: #EF9E9C;
+    color: #e9e9e9;
+
+    color: #42766C;
+    font-weight: 100;
+    font-size: 7.5rem;
+    padding-left: 50rem;
+}
+
+/* .main-title{
+    width: 100%;
+    font-family: 'Tangerine', cursive;
+    font-family: 'Rochester', cursive;
     color: #e9e9e9;
     font-weight: 100;
     font-size: 6.5rem; 
-    }
+} */
 
-    .main-title2{
-        width: 100%;
-            /* text-align:right; */
-      /* font-family: 'Nothing You Could Do', cursive; */
-      font-family: 'Tangerine', cursive;
-
-  
-      color: #e9e9e9;
-      font-weight: 100;
-      font-size: 9.5rem; 
-      }
-
+/* .main-title2{
+    width: 100%;
+    font-family: 'Tangerine', cursive;
+    color: #e9e9e9;
+    font-weight: 100;
+    font-size: 9.5rem; 
+    } */
+/* 
 .title2 h3{
-    /* font-family: 'Nothing You Could Do', cursive; */
-    font-family: 'Rochester', cursive;
+    font-family: 'Rochester', cursive; */
     /* color: #5FEDB6;
     color: #BA386E;
     color: #EF9E9C; */
-    color: #e9e9e9;
+    /* color: #e9e9e9;
     font-weight: 100;
     font-size: 6.5rem;
-    } 
+    }  */
     
 /* icon media */
 .medias{
@@ -126,8 +128,8 @@ body{
 
 .container-btn{
     display: flex;
-    margin-left: 70rem;
-    margin-top: 20rem;
+    margin-left: 55rem;
+    margin-top: 10rem;
 
 }
 
@@ -197,7 +199,7 @@ body{
 
 .nav-link{
     font-family: 'Roboto', sans-serif;
-    color: #f1f1f1 !important;
+    color: #479D84!important;
     font-size: 1.2rem;
     letter-spacing: 3px;
     padding-bottom: 0.3rem;
@@ -266,7 +268,7 @@ body{
 } */
 
 .icon-menu{
-    height: 1.5rem;
+    height: 0.5rem;
 }
 
 /* ///////////////// SPRITE ////////////////////// */
@@ -317,7 +319,8 @@ body{
 
 .logo-heart{
     position: absolute;
-    top: 0;left: 0;
+    top: 10px;
+    left: 10px;
     height: 25%;
     z-index: 2000;
 }
@@ -383,3 +386,156 @@ background-color: #f0f0f0;
         }
         
 }
+
+
+
+
+
+
+
+
+/* /////////////////////////////// bulles ///////////////////////// */
+.bulles-container{
+
+    height: 100vh;
+    overflow: hidden;
+    /* background: #05080e; */
+    background-image: linear-gradient(to right bottom, #05080e, #051937, #01213c);
+    background-image: linear-gradient(to right, #051937, #01213c);
+    background-image: linear-gradient(to right bottom, #05080e, #0f161d, #12202a, #122b38);
+    /* background-image: url(./textile-1824172_1920.jpg); */
+    background-size: cover;
+}
+
+.logoBulles{
+    margin: 40px;
+
+}
+[class~=bubble] {
+    height: 90px;
+    position: relative;
+    width: 90px;
+    left: -100px;
+    background: url('https://www.click4balloons.co.uk/ekmps/shops/click4/images/clear-deco-bubble-balloon-20-1pc-12298-p.png');
+    background-repeat: no-repeat;
+    background-size: 90px 90px;
+    padding-top: 0px;
+    z-index: -999;
+
+}
+
+
+#background-wrap {
+    background: url('http://www.arrumadissimo.com.br/wp-content/uploads/2015/06/Adesivos-pastilhinhas1.png');
+    border: 3px black solid;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -999;
+    margin: 0 auto;
+
+}
+
+
+
+@keyframes sideWays {
+    0% {
+        margin-top: 0px;
+    }
+
+    50% {
+        margin-top: 100px;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50% {
+        transform: translate(700px, 50px);
+    }
+}
+
+
+
+@keyframes sideWays2 {
+    0% {
+        margin-top: 0px;
+    }
+
+    50% {
+        margin-top: 350px;
+    }
+}
+
+@keyframes move2 {
+    0% {
+        transform: translate(500px, -500px);
+    }
+
+    50% {
+        transform: translate(1000px, -500px);
+    }
+}
+
+
+
+.x1 {
+    height: 90px;
+    width: 90px;
+    animation: sideWays 12s ease infinite, move 52s infinite;
+}
+
+
+
+.x2 {
+    height: 90px;
+    width: 90px;
+    animation: sideWays 10s linear infinite alternate, move 57s infinite alternate;
+    animation-delay: 5.5s;
+}
+
+
+.x3 {
+    height: 130px;
+    width: 130px;
+    background-size: 130px 130px;
+    animation: sideWays 5s ease infinite, move 52s infinite;
+}
+
+
+
+
+.x4 {
+    height: 130px;
+    background-size: 130px 130px;
+    width: 130px;
+    animation: sideWays2 10s ease infinite, move2 52s infinite;
+}
+
+.x5 {
+    height: 90px;
+    position: relative;
+    width: 90px;
+    left: -100px;
+    background: url('https://www.click4balloons.co.uk/ekmps/shops/click4/images/clear-deco-bubble-balloon-20-1pc-12298-p.png');
+    background-repeat: no-repeat;
+    background-size: 90px 90px;
+    padding-top: 0px;
+    z-index: -999;
+    
+    height: 230px;
+    width: 230px;
+    background-size: 230px 230px;
+    animation: sideWays2 10s ease infinite, move2 52s infinite;
+}
+
+
+
