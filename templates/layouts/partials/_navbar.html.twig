@@ -1,6 +1,6 @@
 <nav
 	{# class="navbar navbar-expand-lg" id="mainNavbar"> #}
-	<nav class="navbar navbar-expand-lg bg-transparent fixed-top" >
+	<nav class="navbar navbar-expand-lg bg-transparent fixed-top" id="mainNavbar">
 	<div class="container-fluid nav-home">
 		{# <a class="navbar-brand" href="{{ path('app_home') }}">
 			<img src="{{ asset('img/logoNav.svg') }}" alt="">
@@ -24,17 +24,20 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 			<ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
+				{# <li class="nav-item me-2">
+					<a class="nav-link" href="/">Accueuil</a>
+				</li> #}
 				<li class="nav-item me-2">
-					<a class="nav-link" href="/">Accueuil 1</a>
-				</li>
-				<li class="nav-item me-2">
-					<a class="nav-link" href="{{ path('app_home2') }}">Accueil 2</a>
+					<a class="nav-link" href="#">Vous et moi</a>
 				</li>
                 <li class="nav-item me-2">
-					<a class="nav-link" href="{{ path('app_home3') }}">Acceuil 3</a>
+					<a class="nav-link" href="#">Lis-moi</a>
 				</li>
                 <li class="nav-item me-2">
-					<a class="nav-link" href="#">Contactez-moi</a>
+					<a class="nav-link" href="#">Contacte-moi</a>
+				</li>
+				<li class="nav-item me-2">
+					<a class="nav-link" href="#">Mes tarifs</a>
 				</li>
 				<li class="nav-item me-2">
 					<a class="nav-link" href="#"><img class="icon-menu" src="{{ asset('img/cadeau.svg') }}" alt="Carte cadeaux"></a>
