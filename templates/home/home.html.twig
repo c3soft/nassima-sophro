@@ -8,6 +8,7 @@
 	<video autoplay muted loop id="myVideo">
 		<source src="{{ asset('img/home.mp4') }}" type="video/mp4">
 	</video>
+{# <div class="overlay-home"> #}
 
 	{% include "layouts/partials/_navbar.html.twig" %}
 
@@ -17,12 +18,8 @@
 	
 	<section class="home-container">
 		<div class="title">
-			<h1 class="title-home">Prends le temps d'évoluer ...</h1>
+			<h1 class="title-home">Prends le temps d'évoluer...</h1>
 		</div>
-		{# <div class="title2">
-					<h2>Prends le temps d'évoluerrrrrrrrrrrrr ...</h2>
-				</div> #}
-		{# <h1 class="main-title2">Prends le temps d'évoluer ...</h1> #}
 		<div class="container-btn">
 			<a class="btn-appel-action" href="{{ path('app_presentation') }}">La sophrologie</a>
 			<a class="btn-appel-action" href="{{ path('app_presentation') }}">L'hypnose</a>
@@ -46,6 +43,7 @@
 	</ul>
 
 
+</div>
 
 
 
@@ -53,7 +51,7 @@
 
 
 
-<div class="card cookie-alert">
+{# <div class="card cookie-alert">
   <div class="card-body">
     <h5 class="card-title">&#x1F36A; Do you like cookies?</h5>
     <p class="card-text">We use cookies to ensure you get the best experience on our website.</p>
@@ -62,5 +60,5 @@
       <a href="#" class="btn btn-primary accept-cookies">Accept</a>
     </div>
   </div>
-</div>
+</div> #}
 {% endblock %}
