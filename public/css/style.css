@@ -612,6 +612,7 @@ border-radius: 5px;
     }
 
     .btn-appel-action{
+        width: 14rem;
         text-align: center;
         font-size: 1.5rem;
         padding: 5px 5px 5px 5px;
