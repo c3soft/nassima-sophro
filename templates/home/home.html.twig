@@ -8,47 +8,48 @@
 	<video autoplay muted loop id="myVideo">
 		<source src="{{ asset('img/home.mp4') }}" type="video/mp4">
 	</video>
-{# <div class="overlay-home"> #}
+	{# <div class="overlay-home"> #}
 
 	{% include "layouts/partials/_navbar.html.twig" %}
 
 	{# <img src="{{ asset('img/logo.png') }}" alt="" width="229" height="220"> #}
 
 	<img class="logo-heart" src="{{ asset('img/logo.png') }}" alt="">
-	
+
 	<section class="home-container">
 		<div class="title">
-			<h1 class="title-home">Prends le temps d'évoluer...</h1>
+			<h1 class="title-home" data-aos="zoom-in" data-aos-duration="3000" data-aos-easing="ease-in-out-cubic">
+				Prends le temps d'évoluer...
+			</h1>
 		</div>
 		<div class="container-btn">
-			<a class="btn-appel-action" href="{{ path('app_presentation') }}">La sophrologie</a>
-			<a class="btn-appel-action" href="{{ path('app_presentation') }}">L'hypnose</a>
+			<div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+				<a class="btn-appel-action" href="{{ path('app_presentation') }}">La sophrologie</a>
+			</div>
+			<div data-aos="fade-up" data-aos-offset="200" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out">
+				<a class="btn-appel-action" href="{{ path('app_presentation') }}">L'hypnose</a>
+			</div>
 		</div>
 	</section>
 
 
 	<ul class="medias">
-		<li class="media">
+		<li class="media" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
 			<a href="#" target="_blank" rel="noopener"><img src="{{ asset('img/medias/facebook.svg') }}" alt="lien vers facebook" class="logo-media" title="Facebook"></a>
 		</li>
-		<li class="media">
+		<li class="media" data-aos="fade-left" data-aos-delay="150" data-aos-duration="1000" data-aos-easing="ease-in-out">
 			<a href="#" target="_blank" rel="noopener"><img src="{{ asset('img/medias/instagram.svg') }}" alt="lien vers instagram" class="logo-media" title="Instagram"></a>
 		</li>
-		<li class="media">
+		<li class="media" data-aos="fade-left" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out">
 			<a href="#" target="_blank" rel="noopener"><img src="{{ asset('img/medias/pinterest.svg') }}" alt="lien vers pinterest" class="logo-media" title="Pinterest"></a>
 		</li>
-		<li class="media">
+		<li class="media" data-aos="fade-left" data-aos-delay="350" data-aos-duration="1000" data-aos-easing="ease-in-out">
 			<a href="#" target="_blank" rel="noopener"><img src="{{ asset('img/medias/youtube.svg') }}" alt="lien vers youtube" class="logo-media" title="Youtube"></a>
 		</li>
 	</ul>
 
 
 </div>
-
-
-
-
-
 
 
 {# <div class="card cookie-alert">
@@ -60,5 +61,4 @@
       <a href="#" class="btn btn-primary accept-cookies">Accept</a>
     </div>
   </div>
-</div> #}
-{% endblock %}
+</div> #}{% endblock %}
