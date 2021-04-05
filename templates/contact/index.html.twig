@@ -1,10 +1,11 @@
 {% extends 'layouts/base.html.twig' %}
 
-{% block title %}Contact{% endblock %}
+{% block title %}Contact
+{% endblock %}
 
 
 {% block body %}
-{% include "layouts/partials/_navbar.html.twig" %}
+	{% include "layouts/partials/_navbar.html.twig" %}
 	<img class="logo-heart" src="{{ asset('img/logo.png') }}" alt="">
 
 	<main class="bg-contact" style="background-image:url('{{ asset('img/bg-contact2.jpg') }}')">
@@ -12,50 +13,94 @@
 			<h1 class="title-contact">Prends le temps de me contacter...</h1>
 			<div class="row-contact row mt-5">
 				<div class="col-md-6">
-
+					<h3 class="mb-5">Contacte-moi</h3>
 					<form action="">
 
-					<div class="form-floating mb-5">
-						<label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+						<div class="form-floating mb-5">
+							<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+							<label for="floatingInput">Ton email</label>
 
-					</div>
+						</div>
 
-					<div class="form-floating mb-5">
-						<label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						<div class="form-floating mb-5">
+							<textarea class="form-control" placeholder="Laisse un commentaire" id="floatingTextarea" style="height: 200px"></textarea>
+							<label for="floatingTextarea">Ton message</label>
 
-					</div>
+						</div>
 
-					<button class="btn btn-contact"><img class="logo-send" src="{{ asset('images/icons/send.svg') }}" alt="Envoyer le message">Poster</button>
+						<button class="btn btn-contact"><img class="logo-send" src="{{ asset('images/icons/send.svg') }}" alt="Envoyer le message">Poster</button>
 
 					</form>
 				</div>
 
-                <div class="col-md-6">
-                    <div class="infos ms-5">
-                        <p class="info mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aliquam fugit corrupti assumenda facere tempore libero porro inventore voluptas nisi?</p>
-                        <div class="row mb-5">
-                            <div class="col-sm-1">
-                                <img class="logo-media" src="{{ asset('images/icons/mail.svg') }}" alt="">
-                            </div>
-                            <div class="col">
-                                <p>Email</p>
-                            </div>
-                            <p class="sublight">aaaaa.aa@aa.fr</p>
-                        </div>
+				<div class="col-md-6">
+					<div class="infos ms-5">
+						<h3>Mes horraires</h3>
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col"></th>
+									<th scope="col">Matin</th>
+									<th scope="col">Après-midi</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Lundi</td>
+									<td>9h00-12h00</td>
+									<td>14h00-18h00</td>
+								</tr>
+								<tr>
+									<td>Mardi</td>
+									<td>9h00-12h00</td>
+									<td>14h00-18h00</td>
+								</tr>
+								<tr>
+									<td>Mercredi</td>
+									<td>9h00-12h00</td>
+									<td>Fermé</td>
+								</tr>
+								<tr>
+									<td>Jeudi</td>
+									<td>9h00-12h00</td>
+									<td>14h00-18h00</td>
+								</tr>
+								<tr>
+									<td>Vendredi</td>
+									<td>9h0012h00</td>
+									<td>14h00-18h00</td>
+								</tr>
+								<tr>
+									<td>Samedi</td>
+									<td>9h00-12h00</td>
+									<td>Fermé</td>
+								</tr>
 
-                        <div class="row mb-5">
-                            <div class="col-sm-1">
-                                <img class="logo-media" src="{{ asset('images/icons/phone.svg') }}" alt="">
+							</tbody>
+						</table>
+						<h3 class="mx-auto">Mes Coordonées</h3>
+						<div class="row mb-5">
+							<div class="col-sm-1">
+								<img class="logo-media" src="{{ asset('images/icons/mail.svg') }}" alt="">
+							</div>
+							<div class="col">
+								<p>Email</p>
+							</div>
+							<p class="sublight">contact@prendsletempsdevoluer.com</p>
+						
+
+						{# <div class="row mb-5"> #}
+							<div class="col-sm-1">
+								<img class="logo-media" src="{{ asset('images/icons/phone.svg') }}" alt="">
+							</div>
+							<div class="col">
+								<p>Téléphone</p>
+							</div>
+							<p class="sublight">06 02 02 02 02</p>
                             </div>
-                            <div class="col">
-                                <p>Téléphone</p>
-                            </div>
-                            <p class="sublight">06 02 02 02 02</p>
-                        </div>
-                    </div>
-                </div>
+						{# </div> #}
+					</div>
+				</div>
 
 			</div>
 
@@ -65,10 +110,10 @@
 {% endblock %}
 
 {# <div class="col">
-        {{ form_row(formView.name)}}
-       {{ form_label(formView.name)}}
-        {{ form_errors(formView.name)}}
-        {{ form_widget(formView.name)}}
-        {{ form_help(formView.name)}} 
-        {{ form_row(formView.shortDescription)}}
-    </div>#}
+	        {{ form_row(formView.name)}}
+	       {{ form_label(formView.name)}}
+	        {{ form_errors(formView.name)}}
+	        {{ form_widget(formView.name)}}
+	        {{ form_help(formView.name)}} 
+	        {{ form_row(formView.shortDescription)}}
+	    </div>#}
