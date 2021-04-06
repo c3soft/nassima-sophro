@@ -28,7 +28,7 @@
 
 						</div>
 
-						<button class="btn btn-contact"><img class="logo-send" src="{{ asset('images/icons/send.svg') }}" alt="Envoyer le message">Poster</button>
+						<button class="btn btn-contact"><img class="logo-send" src="{{ asset('img/icons/send.svg') }}" alt="Envoyer le message">Poster le message</button>
 
 					</form>
 				</div>
@@ -78,33 +78,49 @@
 
 							</tbody>
 						</table>
-						<h3 class="mx-auto">Mes Coordonées</h3>
-						<div class="row mb-5">
-							<div class="col-sm-1">
-								<img class="logo-media" src="{{ asset('images/icons/mail.svg') }}" alt="">
-							</div>
-							<div class="col">
-								<p>Email</p>
-							</div>
-							<p class="sublight">contact@prendsletempsdevoluer.com</p>
-						
 
-						{# <div class="row mb-5"> #}
-							<div class="col-sm-1">
-								<img class="logo-media" src="{{ asset('images/icons/phone.svg') }}" alt="">
-							</div>
+						<div class="row mt-5">
+							<h3 class="mx-auto">Mes Coordonées</h3>
+
 							<div class="col">
-								<p>Téléphone</p>
+								<div class="row">
+									<div class="col-sm-1 me-3">
+										<img class="logo-media" src="{{ asset('img/icons/mail.svg') }}" alt="">
+									</div>
+									<div class="col">
+										<p>Email</p>
+									</div>
+								</div>
+								<p class="sublight">contact@prendsletempsdevoluer.com</p>
 							</div>
-							<p class="sublight">06 02 02 02 02</p>
-                            </div>
-						{# </div> #}
+
+							<div class="col">
+								<div class="row">
+									<div class="col-sm-1 me-3">
+										<img class="logo-media" src="{{ asset('img/icons/phone.svg') }}" alt="">
+									</div>
+									<div class="col">
+										<p>Téléphone</p>
+									</div>
+								</div>
+								<p class="sublight">06 02 02 02 02</p>
+							</div>
+						</div>
+
 					</div>
 				</div>
 
 			</div>
 
 		</div>
+		<section class="container">
+			<h3>Je réserve ma séance</h3>
+			<div class="reservation">
+				<button class="btn btn-contact"><img class="logo-send" src="{{ asset('img/icons/send.svg') }}" alt="Envoyer le message">Poster</button>
+			</div>
+
+		<a href=""></a>
+		</section>
 	</main>
 
 {% endblock %}

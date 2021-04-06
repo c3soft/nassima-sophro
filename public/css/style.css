@@ -7,7 +7,7 @@
 body{
     min-height: 100vh;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* Style the video: 100% width and height to cover the entire window */
@@ -602,7 +602,7 @@ border-radius: 5px;
 
 /* button */
 .btn-contact{
-    width: 180px;
+    width: 100%;
     font-size: 15px;
     color: #ebebeb;
     border: 1px solid #4ea575;
@@ -633,6 +633,17 @@ border-radius: 5px;
     color: #4ea575
 }
 
+
+.reservation{
+    width: 100%;
+    border:1px solid #000;
+    border-radius: 5px;
+    -pxwebkit-border-radius: 5;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
 /* //////////////////////////////////// COOKIES ///////////////////////// */
 .cookie-alert {
     position: fixed;
