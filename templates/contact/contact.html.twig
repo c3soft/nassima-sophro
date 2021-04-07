@@ -13,7 +13,9 @@
 			<h1 class="title-contact">Prends le temps de me contacter...</h1>
 			<div class="row-contact row mt-5">
 				<div class="col-md-6">
-					<h3 class="mb-5">Contacte-moi</h3>
+					<h3 class="mb-5">Contacte-moi
+						<img class="logo-media" src="{{ asset('img/icons/mail.svg') }}" alt=""></h3>
+
 					<form action="">
 
 						<div class="form-floating mb-5">
@@ -35,7 +37,8 @@
 
 				<div class="col-md-6">
 					<div class="infos ms-5">
-						<h3>Mes horraires</h3>
+						<h3>Mes horraires
+							<img class="logo-media" src="{{ asset('img/icons/clock.svg') }}" alt=""></h3>
 						<table class="table">
 							<thead>
 								<tr>
@@ -80,7 +83,8 @@
 						</table>
 
 						<div class="row mt-5">
-							<h3 class="mx-auto">Mes Coordonées</h3>
+							<h3 class="mx-auto">Mes Coordonées
+								<img class="logo-media" src="{{ asset('img/icons/butterheart.svg') }}" alt=""></h3>
 
 							<div class="col">
 								<div class="row">
@@ -113,14 +117,30 @@
 			</div>
 
 		</div>
-		<section class="container">
-			<h3>Je réserve ma séance</h3>
-			<div class="reservation">
-				<button class="btn btn-reserve"><img class="logo-send" src="{{ asset('img/icons/send.svg') }}" alt="Envoyer le message">Poster</button>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dicta tempore hic laborum velit aspernatur delectus quisquam eius! Quas consectetur, facere quibusdam quis veritatis, sed amet maxime ipsam porro esse, harum pariatur cumque dolores commodi? Deserunt quia repudiandae illo error eveniet delectus nostrum, voluptatibus, cupiditate, earum dignissimos non ab unde?</p>
+		<section class="container mb-5">
+			<h3>Réserve ta séance
+				<img class="logo-media" src="{{ asset('img/icons/calendar2.svg') }}" alt=""></h3>
+			<div class="row reservation">
+
+			<div class="col">
+				<h4 class="mx-auto">Je reserve en distanciel
+					<img class="logo-media" src="{{ asset('img/icons/webcam.svg') }}" alt=""></h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dicta tempore hic laborum velit aspernatur delectus quisquam eius! Quas consectetur, facere quibusdam quis veritatis, sed amet maxime ipsam porro esse, harum pariatur cumque dolores commodi? Deserunt quia repudiandae illo error eveniet delectus nostrum, voluptatibus, cupiditate, earum dignissimos non ab unde?</p>
+				<button class="btn btn-reserve"><img class="logo-send" src="{{ asset('img/icons/webcam.svg') }}" alt="Envoyer le message">Reserver ma visio</button>
+
+			</div>
+			<div class="col">
+				<h4 class="mx-auto">Je reserve en centre
+					<img class="logo-media" src="{{ asset('img/icons/discussion.svg') }}" alt=""></h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque dicta tempore hic laborum velit aspernatur delectus quisquam eius! Quas consectetur, facere quibusdam quis veritatis, sed amet maxime ipsam porro esse, harum pariatur cumque dolores commodi? Deserunt quia repudiandae illo error eveniet delectus nostrum, voluptatibus, cupiditate, earum dignissimos non ab unde?</p>
+				<button class="btn btn-reserve">Reserver</button>
+
+			</div>
+
 			</div>
 
 		</section>
+{% include "layouts/partials/_footer.html.twig" %}
 	</main>
 
 {% endblock %}
