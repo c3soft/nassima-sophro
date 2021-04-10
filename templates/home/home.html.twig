@@ -1,10 +1,21 @@
 {% extends 'layouts/base.html.twig' %}
 
-{% block title %}Nassima-Sophro
+{% block title %}Prends le temps d'évoluer
 {% endblock %}
 
 {% block body %}
-	<!-- The video -->
+	{# Preloader #}
+	<div class="preloader">
+		<div class="preloader-inner">
+			<div class="preloader-icon">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>
+
+<div class="home-page">
+	{# The Video #}
 	<video autoplay muted loop id="myVideo">
 		<source src="{{ asset('img/home.mp4') }}" type="video/mp4">
 	</video>
@@ -23,12 +34,14 @@
 			</h1>
 		</div>
 		<div class="container-btn">
-			<div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+			{# <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
 				<a class="btn-appel-action" href="{{ path('app_presentation') }}">La sophrologie</a>
 			</div>
 			<div data-aos="fade-up" data-aos-offset="200" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out">
 				<a class="btn-appel-action" href="{{ path('app_presentation') }}">L'hypnose</a>
-			</div>
+			</div> #}
+				<a class="btn-appel-action" href="{{ path('app_presentation') }}">La sophrologie</a>
+				<a class="btn-appel-action" href="{{ path('app_presentation') }}">L'hypnose</a>
 		</div>
 	</section>
 
@@ -51,7 +64,7 @@
 
 </div>
 
-
+</div>
 {# <div class="card cookie-alert">
   <div class="card-body">
     <h5 class="card-title">&#x1F36A; Do you like cookies?</h5>
