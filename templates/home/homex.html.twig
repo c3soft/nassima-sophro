@@ -61,10 +61,20 @@
 						Prends le temps d'évoluer...
 					</h1>
 				</div>
-				<div data-aos="fade-down" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" class="container-btn">
+
+                <div class="container-btn">
+                <div data-aos="zoom-in" data-aos-delay="50" data-aos-duration="2000" data-aos-easing="ease-in-out-cubic">
+				    <a class="btn-appel-action" href="{{ path('app_presentation') }}">La sophrologie</a>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="250" data-aos-duration="2000" data-aos-easing="ease-in-out">
+                    <a class="btn-appel-action" href="{{ path('app_presentation') }}">L'hypnose</a>
+                </div>
+                </div>
+
+				{# <div data-aos="fade-down" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" class="container-btn">
 					<a class="btn-appel-action" href="{{ path('app_attente') }}">La sophrologie</a>
 					<a class="btn-appel-action" href="{{ path('app_attente') }}">L'hypnose</a>
-				</div>
+				</div> #}
 			</section>
 
 			<ul class="medias">
