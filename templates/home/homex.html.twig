@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Sophrologue Amiens">
+		<title>
+			{% block title %}Prends le temps d'évoluer
+			{% endblock %}
+		</title>
+		{# Favicon
+				        ----------------------------------------------- #}
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('img/favicons/apple-touch-icon.png') }}">
+		<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/favicons/favicon-32x32.png') }}">
+		<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/favicons/favicon-16x16.png') }}">
+		<link rel="manifest" href="{{ asset('img/favicons/site.webmanifest') }}">
+		<link rel="mask-icon" href="{{ asset('img/favicons/safari-pinned-tab.svg') }}" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta
+		name="theme-color" content="#ffffff">
+
+		{# Fonts
+				        ----------------------------------------------- #}
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link
+		href="https://fonts.googleapis.com/css2?family=Tangerine" rel="stylesheet">
+
+		{# CSS
+				        ----------------------------------------------- #}
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+		<link rel="stylesheet" href="{{ asset('css/home.css') }}">
+
+	</head>
+	<body>
+
+		{# Preloader #}
+		{# <div class="preloader">
+						<div class="preloader-inner">
+							<div class="preloader-icon">
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div> #}
+
+        <div class="home-page"> {# The Video #}
+                <video autoplay muted loop id="myVideo">
+                    <source src="{{ asset('img/home.mp4') }}" type="video/mp4">
+                </video>
+			    {# <div class="overlay-home"> #}
+
+			{% include "layouts/partials/_navbar.html.twig" %}
+
+			<img class="logo-heart" src="{{ asset('img/logo.png') }}" alt="Logo du site prends le temps d'évoluer">
+
+			<section class="home-container">
+				<div class="title">
+					<h1 class="title-home" data-aos="zoom-in" data-aos-duration="3000" data-aos-easing="ease-in-out-cubic">
+						Prends le temps d'évoluer...
+					</h1>
+				</div>
+				<div data-aos="fade-down" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" class="container-btn">
+					<a class="btn-appel-action" href="{{ path('app_attente') }}">La sophrologie</a>
+					<a class="btn-appel-action" href="{{ path('app_attente') }}">L'hypnose</a>
+				</div>
+			</section>
+
+			<ul class="medias">
+				<li class="media" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+					<a href="#" target="_blank" rel="noopener"><img src="{{ asset('img/medias/facebook.svg') }}" alt="lien vers facebook" class="logo-media" title="Facebook"></a>
+				</li>
+				<li class="media" data-aos="fade-left" data-aos-delay="150" data-aos-duration="1000" data-aos-easing="ease-in-out">
+					<a href="#" target="_blank" rel="noopener"><img src="{{ asset('img/medias/instagram.svg') }}" alt="lien vers instagram" class="logo-media" title="Instagram"></a>
+				</li>
+				<li class="media" data-aos="fade-left" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out">
+					<a href="#" target="_blank" rel="noopener"><img src="{{ asset('img/medias/pinterest.svg') }}" alt="lien vers pinterest" class="logo-media" title="Pinterest"></a>
+				</li>
+				<li class="media" data-aos="fade-left" data-aos-delay="350" data-aos-duration="1000" data-aos-easing="ease-in-out">
+					<a href="#" target="_blank" rel="noopener"><img src="{{ asset('img/medias/youtube.svg') }}" alt="lien vers youtube" class="logo-media" title="Youtube"></a>
+				</li>
+			</ul>
+
+		</div>
+
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+		<script src="{{ asset('js/app.js') }}"></script>
+	</body>
+</html>

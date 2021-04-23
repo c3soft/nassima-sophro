@@ -6,7 +6,8 @@
 
 {% block body %}
 	{% include "layouts/partials/_navbar.html.twig" %}
-	<img class="logo-heart" src="{{ asset('img/logo.png') }}" alt="">
+	{# <img class="logo-heart" src="{{ asset('img/logo.png') }}" alt=""> #}
+	<a href="{{ path('app_home') }}"><img class="logo-heart" src="{{ asset('img/logo.png') }}" alt="Logo du site prends le temps d'évoluer" title="Retour à l'accueil"></a>
 
 	<main class="bg-contact" style="background-image:url('{{ asset('img/bg-contact2.jpg') }}')">
 		<div class="container">
