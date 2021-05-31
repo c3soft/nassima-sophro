@@ -1,4 +1,4 @@
-<footer>
+{# <footer> #}
 	{# <p>Me suivre sur:</p>
 		<ul class="mediaas">
 			<li class="mediaa">
@@ -13,11 +13,11 @@
 		</ul> #}
 
 
-	<div class="container">
+	{# <div class="container"> #}
 
 
 
-
+{# 
 		<ul class="foote_bottom_ul_amrc">
 			<li>
 				<a href="{{ path('app_home') }}">Accueil</a>
@@ -26,7 +26,7 @@
 				<a href="#">Vous & moi</a>
 			</li>
 			<li>
-				<a href="#">Lis moi</a>
+				<a href="#">Lisez-moi</a>
 			</li>
 			<li>
 				<a href="#">Mes tarifs</a>
@@ -37,10 +37,10 @@
 			<li>
 				<a href="#">Mentions légales</a>
 			</li>
-		</ul>
+		</ul> #}
 		<!--foote_bottom_ul_amrc ends here-->
-		<p class="text-center">Copyright @2021 | Designed With and by
-			<a href="#">C3Soft.fr</a>
+		{# <p class="text-center">&copy;Copyright prendsletempsdevoluer@2021 | Designed With and by
+			<a href="https://c3soft.fr">C3Soft.fr</a>
 		</p>
 
 		<ul class="social_footer_ul">
@@ -64,7 +64,51 @@
 					<i class="fab fa-youtube"></i>
 				</a>
 			</li>
-		</ul>
+		</ul> #}
 		<!--social_footer_ul ends here-->
-	</div>
-</footer>
+	{# </div>
+</footer> #}
+
+
+
+<div class="mt-5 pt-5 pb-5 footer">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-5 col-xs-12 about-company">
+      <h2>Prends le temps d'évoluer</h2>
+      <p class="pr-5 text-white-50">Sophrologie et hypnose en ligne. Surmontez vos défis et occupez-vous de votre bien-être personnel.</p>
+      <p><a href="https://consent.youtube.com/"><i class="fab fa-youtube"></i></a>
+		<a href="https://www.pinterest.fr/"><i class="fab fa-pinterest"></i></a>
+		<a href="https://fr-fr.facebook.com"><i class="fab fa-facebook-f"></i></a>
+		<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+	</p>
+    </div>
+    <div class="col-lg-3 col-xs-12 links">
+      <h4 class="mt-lg-0 mt-sm-3">Menu</h4>
+        <ul class="m-0 p-0">
+          <li><a href="{{ path('app_home') }}">Accueil</a></li>
+          <li><a href="#">Vous & moi</a></li>
+          <li><a href="#">Lisez-moi</a></li>
+          <li><a href="#">Mes tarifs</a></li>
+          <li><a href="{{ path('app_contact') }}">Contact</a></li>
+          <li><a href="#">Mentions légales</a></li>
+        </ul>
+    </div>
+    <div class="col-lg-4 col-xs-12 location">
+      <h4 class="mt-lg-0 mt-sm-5">Localisation</h4>
+      <p>Amiens 80000 Haut de france</p>
+      <p class="mb-2"><i class="fa fa-phone mr-3"></i> 06 06 06 06</p>
+      <p><i class="fa fa-envelope mr-3"></i> contact@prendsletempsdevoluer.com</p>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col copyright">
+      {# <p class=""><small class="text-white-50">© Copyright prendsletempsdevoluer.com @ 2021. Tous droits révervés.</small></p>
+      <p class=""><small class="text-white-50">Développé avec et par <a href="https://c3soft.fr">C3Soft.fr</a></small></p> #}
+	  <p class="text-center text-white-50">&copy;Copyright prendsletempsdevoluer.com @2021 | Designed With and by
+			<a href="https://c3soft.fr" target="_blank" rel="noopener">C3Soft.fr</a>
+		</p>
+    </div>
+  </div>
+</div>
+</div>
