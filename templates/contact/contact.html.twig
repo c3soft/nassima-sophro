@@ -9,11 +9,7 @@
 	{# <img class="logo-heart" src="{{ asset('img/logo.png') }}" alt=""> #}
 	<a href="{{ path('app_home') }}"><img class="logo-heart" src="{{ asset('img/logo.png') }}" alt="Logo du site prends le temps d'évoluer" title="Retour à l'accueil"></a>
 
-
-
-
-
-	<main>
+<main>
 <img class="bg-contact" src="{{ asset('img/bg-contact.png') }}" alt="">
 	{# <main class="bg-contact" style="background-image:url('{{ asset('img/bg-contact2.jpg') }}')"> #}
 		<div class="container">
@@ -23,23 +19,49 @@
 					<h3 class="mb-5">Contacte-moi
 						<img class="logo-media" src="{{ asset('img/icons/mail.svg') }}" alt=""></h3>
 
-					<form action="">
+
+
+
+
+
+
+{# 
+				<form action="">
 
 						<div class="form-floating mb-5">
 							<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
 							<label for="floatingInput">Votre email</label>
-
 						</div>
 
 						<div class="form-floating mb-5">
 							<textarea class="form-control" placeholder="Laisse un commentaire" id="floatingTextarea" style="height: 200px"></textarea>
 							<label for="floatingTextarea">Message</label>
-
-						</div>
+					</div>
 
 						<button class="btn btn-contact"><img class="logo-send" src="{{ asset('img/icons/send.svg') }}" alt="Envoyer le message">Poster le message</button>
 
-					</form>
+					</form>	
+	 #}
+
+
+{{ form_start(form) }}
+<div class="form-floating mb-5">
+	{{ form_widget(form.email)}}
+	{{ form_label(form.email)}}
+</div>
+	{{ form_row(form.subject)}}
+<div class="form-floating mb-5">
+	{{ form_widget(form.message)}}
+	{{ form_label(form.message)}}
+</div>
+<button class="btn btn-contact"><img class="logo-send" src="{{ asset('img/icons/send.svg') }}" alt="Envoyer le message">Poster le message</button>
+
+{{ form_end(form) }}
+
+
+
+
+
 				</div>
 
 				<div class="col-md-6">
