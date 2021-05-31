@@ -253,6 +253,10 @@ body{
     border-bottom: 1px solid #479D84;
     transform: scale(0);
     transition: transform 250ms ease-in-out;
+    -webkit-transition: transform 250ms ease-in-out;
+    -moz-transition: transform 250ms ease-in-out;
+    -ms-transition: transform 250ms ease-in-out;
+    -o-transition: transform 250ms ease-in-out;
 }
 
 .nav-services:hover:after{
@@ -265,6 +269,10 @@ body{
     border-bottom: 1px solid #479D84;
     transform: scale(0);
     transition: transform 250ms ease-in-out;
+    -webkit-transition: transform 250ms ease-in-out;
+    -moz-transition: transform 250ms ease-in-out;
+    -ms-transition: transform 250ms ease-in-out;
+    -o-transition: transform 250ms ease-in-out;
 }
 
 .nav-item:hover:after{
@@ -309,12 +317,6 @@ body{
     fill: #479D84;
 }
 
-/* #Layer_1{
-    height: 1.5rem;
-    width: 1.5rem;
-} */
-
- 
 
 
   /* //////////////////////////////// MEDIA ///////////////////////////// */
