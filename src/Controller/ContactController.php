@@ -31,10 +31,10 @@ class ContactController extends AbstractController
                     'message' => $contact->get('message')->getData()
                 ]);
 
-                $mailer->send($email);
+                // $mailer->send($email);
 
                 // add flash
-
+                $this->addFlash('notice', 'Votre email à envoyé avec succès !');
                 return $this->redirectToRoute('app_contact');
 
         }

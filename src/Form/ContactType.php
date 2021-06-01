@@ -23,7 +23,7 @@ class ContactType extends AbstractType
                 ]
             ])
             ->add('subject', ChoiceType::class,[
-                'placeholder' => '-- Sujet --',
+                'placeholder' => '-Chosisez un sujet-',
                 'choices' => [
                     'Premier contact' => 'Premier contact',
                     'Plus d\'infos' => 'Plus d\'infos',
@@ -39,7 +39,7 @@ class ContactType extends AbstractType
             ->add('message', TextareaType::class, [
                 'label' => 'Votre message',
                 'attr' => [
-                    'class' => 'form-control',
+                    'class' => 'form-control ta-message',
                     'id' => 'floatingTextarea',
                     'placeholder' => 'Laissez un commentaire'
 
