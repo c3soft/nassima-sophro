@@ -22,3 +22,12 @@ btnNav.classList.toggle('active');
 mainNavbar.classList.toggle('js-mainNavbar');
 navbarTogglerDemo02.classList.toggle('js-collapseNavbar');
 })
+
+// Toast contact
+// ---------------------------------------------------------------------------
+var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+var toastList = toastElList.map(function (toastEl) {
+  return new bootstrap.Toast(toastEl)
+})
+
+toastList.forEach(toast => toast.show());
