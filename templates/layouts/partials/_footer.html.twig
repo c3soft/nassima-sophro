@@ -16,9 +16,9 @@
 			<li><a href="{{ path('app_home') }}">Accueil</a></li>
 			<li><a href="#">Vous & moi</a></li>
 			<li><a href="#">Lisez-moi</a></li>
+			<li><a href="{{ path('app_contact') }}">Contactez-moi</a></li>
 			<li><a href="#">Mes tarifs</a></li>
-			<li><a href="{{ path('app_contact') }}">Contact</a></li>
-			<li><a href="#">Mentions légales</a></li>
+			<li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Mentions légales</a></li>
 			</ul>
 		</div>
 		<div class="col-lg-4 col-xs-12 location">
@@ -28,14 +28,25 @@
 		<p><i class="fa fa-envelope mr-3"></i> contact@prendsletempsdevoluer.com</p>
 		</div>
 	</div>
+
+
+<!-- Button trigger modal
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+
+
 	<div class="row mt-5">
 		<div class="col copyright">
 		{# <p class=""><small class="text-white-50">© Copyright prendsletempsdevoluer.com @ 2021. Tous droits révervés.</small></p>
 		<p class=""><small class="text-white-50">Développé avec et par <a href="https://c3soft.fr">C3Soft.fr</a></small></p> #}
 		<p class="text-white-50">&copy; Copyright prendsletempsdevoluer.com @2021 | Designed With and by
 				<a href="https://c3soft.fr" target="_blank" rel="noopener">C3Soft.fr</a>
-			</p>
+		</p>
 		</div>
 	</div>
 	</div>
 </footer>
+
+{% include "layouts/partials/_cgvModal.html.twig" %}
