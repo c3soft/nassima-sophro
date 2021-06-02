@@ -9,6 +9,7 @@
 	{# <img class="logo-heart" src="{{ asset('img/logo.png') }}" alt=""> #}
 	<a href="{{ path('app_home') }}"><img class="logo-heart" src="{{ asset('img/logo.png') }}" alt="Logo du site prends le temps d'évoluer" title="Retour à l'accueil"></a>
 
+{% include "layouts/partials/_visioModal.html.twig" %}
 
 
 <main>
@@ -132,15 +133,15 @@
 				<img class="logo-visio" src="{{ asset('img/icons/calendar.svg') }}" alt=""></h3>
 			<div class="row reservation">
 
-			<div class="col">
-				<h4 class="mx-auto">Ma séance en visio-conférence.
-					<img class="logo-media" src="{{ asset('img/icons/webcam.svg') }}" alt=""></h4>
-				<p>La séance est la même qu'en présentiel, mais disponible du confort de chez vous ou partout ailleurs (chez un proche, au bureau, ...). Je vous propose une écoute, une attention et des techniques identiques à ce qui se fait en cabinet. Le maître mot de mes séances est la personnalisation. Je m'adapte à vos besoins et à votre environnement. L'hypnose et la sophrologie en ligne sont tout aussi efficace qu'en présentiel ! <button>En savoir plus...</button></p>
-				
-				{# <button class="btn btn-reserve"><img class="logo-media" src="{{ asset('img/icons/calendar.svg') }}" alt="Envoyer le message">Je réserve ma séance</button> #}
-				<button class="btn btn-contact"><img class="logo-send" src="{{ asset('img/icons/calendar.svg') }}" alt="Envoyer le message">Je réserve ma séance</button>
+				<div class="col">
+					<h4 class="mx-auto">Ma séance en visio-conférence.
+						<img class="logo-media" src="{{ asset('img/icons/webcam.svg') }}" alt=""></h4>
+					<p>La séance est la même qu'en présentiel, mais disponible du confort de chez vous ou partout ailleurs (chez un proche, au bureau, ...). Je vous propose une écoute, une attention et des techniques identiques à ce qui se fait en cabinet. Le maître mot de mes séances est la personnalisation. Je m'adapte à vos besoins et à votre environnement. L'hypnose et la sophrologie en ligne sont tout aussi efficace qu'en présentiel ! <button type="button" class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#visioModal">En savoir plus...</button></p>
+					
+					{# <button class="btn btn-reserve"><img class="logo-media" src="{{ asset('img/icons/calendar.svg') }}" alt="Envoyer le message">Je réserve ma séance</button> #}
+					<button class="btn btn-contact"><img class="logo-send" src="{{ asset('img/icons/calendar.svg') }}" alt="Envoyer le message">Je réserve ma séance</button>
 
-			</div>
+				</div>
 			</div>
 
 		</section>

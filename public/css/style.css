@@ -634,11 +634,7 @@ h3{
     color: #42766C;
 }
 
-.titleModal{
-    margin-top: 4rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
+
 
 .container-mail{
     /* background-color: #ba386e; */
@@ -746,6 +742,16 @@ h3{
 .logo-visio{
     width: 2rem !important;
 }
+
+
+/* //////////////////////////////////// MODALS ////////////////////////// */
+
+.titleModal{
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 
 /* //////////////////////////////////// FOOTER ////////////////////////// */
 
