@@ -25,9 +25,9 @@ class ContactType extends AbstractType
             ->add('subject', ChoiceType::class,[
                 'placeholder' => '-Chosisez un sujet-',
                 'choices' => [
-                    'Premier contact' => 'Premier contact',
-                    'Plus d\'infos' => 'Plus d\'infos',
-                    'Contact professionnel' => 'Contact professionnel',
+                    'Premier contact' => 'Mon premier rendez-vous',
+                    'Plus d\'infos' => 'Ma première question',
+                    'Contact professionnel' => 'Mes autres demandes',
                 ],
                 'expanded' => false,
                 'multiple' => false,
