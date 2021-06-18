@@ -16,6 +16,14 @@ body{
     overflow: hidden;
 }
 
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    color: #42766C;
+}
+
+/* /////////////////////// LOADER ///////////////////////////// */
+
 .preloader{
     position: fixed;
     top: 0;
@@ -85,6 +93,7 @@ body{
     }
   }
 
+/* /////////////////////// HOME ///////////////////////////// */
 
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
@@ -600,18 +609,8 @@ border-radius: 5px;
     position: fixed;
     margin-top: 50px;
     width: 50%;
-
-    /* height: 100vh; */
-    /* background-color: crimson; */
-    /* background-image: url('../../public/images/bg_contact.jpg'); */
-    /* background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, 0.753); */
     opacity: 0.35;
-    /* text-align: center; */
     z-index: -1;
-  
 } 
 
 .row-contact{
@@ -622,29 +621,16 @@ border-radius: 5px;
    text-align: center;
     padding-top: 7rem;
     margin-bottom: 6rem;
-     /* color: #ebebeb;
-    font-family: Lato, sans-serif;
-    font-size: 5rem; */
     font-family: 'Tangerine', cursive;
     color: #42766C;
     font-weight: 100;
     font-size: 6.5vw;
     letter-spacing: 4px;
-    /* color:#3b3b3b; */
-}
-
-
-h3{
-    /* font-family: 'Rochester', cursive; */
-    font-family: 'Raleway', sans-serif;
-    font-size: 2.5rem;
-    color: #42766C;
 }
 
 
 
 .container-mail{
-    /* background-color: #ba386e; */
     margin-bottom: 7rem;
 }
 
@@ -653,33 +639,16 @@ h3{
     /* color: #ebebeb !important; */
 }
 
-
-.form-input:focus{
-    background: transparent;
-    border-color: #4ea575;
-    border-right: none;
-    border-left: none;
-    border-top: none;
-    border-radius: 0;
-    box-shadow: 0 0 0;
-}
+.form-control:focus {
+    border-color: rgb(78, 165, 117);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(78, 165, 117, 0.6);
+  }
 
 /* textarea */
 .ta-message {
     height:300px !important;
     resize: none;
-    /* background: transparent; */
-    /* min-height: 6rem !important; */
 } 
-
-/* .form-ta{
-}
-
-.form-ta:focus{
-    background: transparent;
-    border-color: #4ea575 !important;
-    box-shadow: 0 0 0;
-} */
 
 /* button */
 .btn-contact{
