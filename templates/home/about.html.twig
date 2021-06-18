@@ -10,18 +10,21 @@
 
 	{# <img src="{{ asset('img/logo.png') }}" alt="" width="229" height="220"> #}
 
-	<img class="logoBulles" src="{{ asset('img/logo.png') }}" alt="">
+	{# <img class="logoBulles" src="{{ asset('img/logo.png') }}" alt=""> #}
+
+		<a href="{{ path('app_home') }}"><img class="logo-heart" src="{{ asset('img/logo.png') }}" alt="Logo du site prends le temps d'évoluer" title="Retour à l'accueil"></a>
+
 
 	<section class="home-container">
 		<div class="title">
-			<h1 class="title-home">Prends le temps d'évoluer ...</h1>
+			<h1 class="title-home">Prends le temps de me connaitre ...</h1>
 		</div>
 		{# //////////////////////////////////////////////////// #}
 
 
 		<div id="container">
 			<div id="background-wrap">
-				<div class="bubble x1"></div>
+				<div class="bubble x1">AAAAAA</div>
 				<div class="bubble x2"></div>
 				<div class="bubble x3"></div>
 				<div class="bubble x4"></div>
@@ -48,10 +51,10 @@
       <span>La Sophrologie</span>
     </a>
   #}
-<div class="box-3">
+{# <div class="box-3">
 	<a class="btn-three" href="{{ path('app_presentation') }}">La sophrologie</a>
 	<a class="btn-three" href="{{ path('app_presentation') }}">L'hypnose</a>
- </div>
+ </div> #}
 </div></section><ul class="medias">
 	<li class="media">
 		<a href="#" target="_blank" rel="noopener"><img src="{{ asset('img/medias/facebook.svg') }}" alt="lien vers facebook" class="logo-media" title="Facebook"></a>
