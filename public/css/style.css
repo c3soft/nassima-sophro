@@ -336,7 +336,7 @@ body{
     position: fixed;
     top: 10px;
     left: 10px;
-    height: 20%;
+    height: 12rem;
     z-index: 2000;
 }
 
@@ -689,7 +689,11 @@ h3{
     color: #ebebeb;
     border: 1px solid #4ea575;
     border-radius: 6px;
-    transition: .6s lineare;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
 }
 
 .btn-contact:hover{
@@ -703,7 +707,11 @@ h3{
     margin-right: 5px;
     margin-left: -38px;
     opacity: 0;
-    transition: .6s lineare;
+    transition: all .8s;
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -ms-transition: all .8s;
+    -o-transition: all .8s;
 }
 
 .btn-contact:hover img{
